@@ -4,6 +4,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 import TrackingComponent from "@/components/Tracking";
@@ -11,6 +12,7 @@ import { TrackingSelector } from "@/components/TrackingSelector";
 
 export default function LoginPage() {
   const [selectedPointer, setSelectedPointer] = useState("");
+  const [isCamera, setIsCamera] = useState(false);
 
   return (
     <div className="flex min-h-svh flex-col items-center justify-center bg-muted p-6 md:p-10">
@@ -37,9 +39,13 @@ export default function LoginPage() {
 
                   <TrackingSelector disabled title="Select an Item to place" item="Item" />
                 </div>
+
+                <Button type="button" className="w-full" onClick={() => setIsCamera(!isCamera)}>
+                  {isCamera ? "Stop camera" : "Start camera"}
+                </Button>
               </div>
 
-              <TrackingComponent camera={true} pointer={selectedPointer} />
+              <TrackingComponent camera={isCamera} pointer={selectedPointer} />
             </CardContent>
           </Card>
 

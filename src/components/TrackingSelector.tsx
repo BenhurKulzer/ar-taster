@@ -26,67 +26,67 @@ const frameworks = [
     label: "Nose",
   },
   {
-    value: "left_eye",
+    value: "leftEye",
     label: "Left Eye",
   },
   {
-    value: "right_eye",
+    value: "rightEye",
     label: "Right Eye",
   },
   {
-    value: "left_ear",
+    value: "leftEar",
     label: "Left Ear",
   },
   {
-    value: "right_ear",
+    value: "rightEar",
     label: "Right Ear",
   },
   {
-    value: "left_shoulder",
+    value: "leftShoulder",
     label: "Left Shoulder",
   },
   {
-    value: "right_shoulder",
+    value: "rightShoulder",
     label: "Right Shoulder",
   },
   {
-    value: "left_elbow",
+    value: "leftElbow",
     label: "Left Elbow",
   },
   {
-    value: "right_elbow",
+    value: "rightElbow",
     label: "Right Elbow",
   },
   {
-    value: "left_wrist",
+    value: "leftWrist",
     label: "Left Wrist",
   },
   {
-    value: "right_wrist",
+    value: "rightWrist",
     label: "Right Wrist",
   },
   {
-    value: "left_hip",
+    value: "leftHip",
     label: "Left Hip",
   },
   {
-    value: "right_hip",
+    value: "rightHip",
     label: "Right Hip",
   },
   {
-    value: "left_knee",
+    value: "leftKnee",
     label: "Left Knee",
   },
   {
-    value: "right_knee",
+    value: "rightKnee",
     label: "Right Knee",
   },
   {
-    value: "left_ankle",
+    value: "leftAnkle",
     label: "Left Ankle",
   },
   {
-    value: "right_ankle",
+    value: "rightAnkle",
     label: "Right Ankle",
   }
 ]

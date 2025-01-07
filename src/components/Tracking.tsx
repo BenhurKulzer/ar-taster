@@ -36,7 +36,7 @@ export default function TrackingComponent({ camera, pointer }: TrackingComponent
     pose.keypoints.forEach((keypoint) => {
       if (keypoint.score > 0.2) {
         ctx.beginPath();
-        ctx.arc(keypoint.position.x, keypoint.position.y, 3, 0, 2 * Math.PI);
+        ctx.arc(keypoint.position.x, keypoint.position.y, 4, 0, 2 * Math.PI);
         ctx.fillStyle = keypoint.part === pointer ? 'green' : 'red';
         ctx.fill();
       }
@@ -55,7 +55,7 @@ export default function TrackingComponent({ camera, pointer }: TrackingComponent
       ctx.moveTo(keypoints[0].position.x, keypoints[0].position.y);
       ctx.lineTo(keypoints[1].position.x, keypoints[1].position.y);
       ctx.lineWidth = 3;
-      ctx.strokeStyle = 'blue';
+      ctx.strokeStyle = 'white';
       ctx.stroke();
     });
   };

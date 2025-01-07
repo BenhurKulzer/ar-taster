@@ -136,7 +136,7 @@ export function TrackingSelector({ disabled, title, item, setTrackingPoint }: Tr
                   value={framework.value}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
-                    setTrackingPoint(currentValue)
+                    setTrackingPoint?.(currentValue)
                     setOpen(false);
                   }}
                 >

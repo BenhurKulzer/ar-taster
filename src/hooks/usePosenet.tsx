@@ -12,7 +12,13 @@ const usePosenet = (camera: boolean, parentDimensions: { width: number, height: 
       try {
         await tf.ready();
         await tf.setBackend('webgl');
-        const net = await posenet.load({ inputResolution: { width: parentDimensions.width, height: parentDimensions.height }, scale: 0.5 });
+
+        const net = await posenet.load({
+          architecture: 'MobileNetV1',
+          outputStride: 16,
+          inputResolution: { width: parentDimensions.width, height: parentDimensions.height }
+        });
+
         setNet(net);
         setIsModelLoaded(true);
       } catch (error) {
